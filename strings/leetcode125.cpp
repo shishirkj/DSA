@@ -1,4 +1,9 @@
 /*
+
+What is palindrome ?
+A word, phrase, or sequence,or number that reads the same backwards as forwards.   Example -> madam,racecar,noon.
+
+
 QUESTION -
 A phrase is a palindrome if, after converting all uppercase letters
 into lowercase letters and removing all non-alphanumeric characters,
