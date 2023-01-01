@@ -1,3 +1,21 @@
+/*
+QUESTION-
+What is the length of the given string
+
+EXAMPLE - 
+1.
+RAHUL 
+string length -> 5
+
+2.
+ELON
+string length -> 4
+
+*/
+
+
+//CODE
+
 #include<iostream>
 using namespace std;
 int main(){
