@@ -1,3 +1,21 @@
+/*
+
+QUESTION -
+
+Reverse the given string 
+
+EXAMPLE - 
+
+1. MONEY
+Reverse of string --> YENOM
+
+2.BOTTLE
+Reverse of string --> ELTTOB
+
+*/
+
+// CODE
+
 #include<string>
 #include<iostream>
 #include<vector>
