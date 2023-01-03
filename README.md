@@ -1,3 +1,4 @@
 # BASIC DSA/LEETCODE/GEEKSFORGEEKS QUESTIONS
 
-![PNG IMG](https://user-images.githubusercontent.com/90249481/210352679-dd6a3621-3108-4f81-8919-569be1da15b9.png)
+
+![PNG IMG2](https://user-images.githubusercontent.com/90249481/210352781-650046fe-20bf-4d44-acaf-e00f8f668bad.png)
