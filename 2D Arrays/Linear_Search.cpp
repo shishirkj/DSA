@@ -1,3 +1,8 @@
+
+
+
+// Taking 4*4 matrix 
+
 #include<iostream>
 using namespace std;
 
