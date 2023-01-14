@@ -1,7 +1,4 @@
-
-
-
-// Taking 4*4 matrix 
+/* Taking 4*4 matrix and finding the key in matrix 
 
 #include<iostream>
 using namespace std;
