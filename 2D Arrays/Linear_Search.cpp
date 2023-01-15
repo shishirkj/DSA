@@ -31,7 +31,7 @@ int main(){
 
 
 int arr[4][4];int key;
-
+// taking i/p (elements) of matrix
 cout<<"Enter the elements of matrix:"<<endl;
 for(int i=0;i<4;i++){
     for(int j=0;j<4;j++){
@@ -39,7 +39,7 @@ for(int i=0;i<4;i++){
     }
 }
 
-
+// Printing the elements
 for(int i=0;i<4;i++){
     for(int j=0;j<4;j++){
         cout<<arr[i][j]<<" ";
