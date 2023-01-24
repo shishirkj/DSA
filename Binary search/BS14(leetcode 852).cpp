@@ -32,17 +32,31 @@ public:
         int s =0;
        int  n= arr.size();int e =n-1;
         while(s<=e){
-            int mid = s+(e-s)/2; // To avoid INTEGER OVERFLOW -->geeksforgeeks.org/how-to-avoid-integer-overflows-and-underflows-in-cpp/  
-            int next = (mid+1)%n;
-            int prev = (mid+n-1)%n;
+            int mid = s+(e-s)/2;
+            if(mid>0 && mid<n-1){
             if(arr[mid]>arr[mid+1] && arr[mid]>arr[mid-1]){
                return mid;
             }
-            else if (arr[]{
-                e = mid;
+            else if (arr[mid-1]>arr[mid]){
+                   e = mid-1;
             }
-            else if (arr[s]<arr[mid]){
-                s = mid;
+            else {
+                s = mid+1;
+            }
+            }
+            if(mid==0){
+            if(arr[0]>arr[1]){
+                return 0;}
+                else{
+                    return 1;
+                }
+            }
+            if(mid == n-1){
+                if(arr[mid]>arr[n-2]){
+                            return n-1; }
+                            else{
+                                return n-2;
+                            }
             }
             
             
