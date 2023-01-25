@@ -25,6 +25,7 @@ QUESTION LINK --> https://practice.geeksforgeeks.org/problems/rotation4723/1?utm
         while(s<=e){
             int mid = s+(e-s)/2;
            int prev = nums[(mid+n-1)%n];
+     //no need to check next = nums[(mid+1)%n] as it is sorted
             if( nums[mid]<prev){
                 return nums[mid];
             }
