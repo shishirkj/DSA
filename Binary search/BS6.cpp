@@ -17,8 +17,29 @@ We can see that the array was rotated
 QUESTION LINK --> https://practice.geeksforgeeks.org/problems/rotation4723/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
 */
 
-//CODE
+//CODE(Better) optimized
 
+  int s =0;int n = nums.size();int e = n-1;
+             if(nums[e] >= nums[0]) return nums[0];
+                
+        while(s<=e){
+            int mid = s+(e-s)/2;
+           int prev = nums[(mid+n-1)%n];
+            if( nums[mid]<prev){
+                return nums[mid];
+            }
+// as in first example first half(3 to 5 is sorted)sorted so we move to unsorted part of array
+            else if(nums[mid]>=nums[0]){
+                        s = mid+1;
+            }
+            // beacuse pivot element is always in unsorted array
+            else {
+                e = mid-1;
+            }
+        }
+        return 0;
+
+//CODE
 class Solution{
 public:	
 	int findKRotation(int arr[], int n) {
