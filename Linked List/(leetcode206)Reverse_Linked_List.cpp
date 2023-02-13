@@ -54,3 +54,33 @@ public:
 
     }
 };
+
+
+
+//RECURSIVE
+
+problem link --> https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1?utm_source=gfg&utm_medium=article&utm_campaign=bottom_sticky_on_article
+
+class Solution
+{
+    
+    private:
+   struct  Node  *reverse(struct Node *head){  
+        //base condition
+     if(head->next==NULL || head==NULL){return head;}   
+        
+    Node *k  = reverse(head->next);
+        head->next->next = head;
+        head->next = NULL;
+        return k;
+    }
+    public:
+    //Function to reverse a linked list.
+    struct Node* reverseList(struct Node *head)
+    {
+        // code here
+        // return head of reversed list
+        return reverse(head);
+    }
+    
+};
