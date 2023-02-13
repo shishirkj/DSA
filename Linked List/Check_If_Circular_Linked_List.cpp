@@ -43,7 +43,7 @@ struct Node
 
 bool isCircular(Node *head)
 {
-   // Your code here
+   // we have to check two conditions ________<1> if NON CIRCULAR  AND_______________<2>IF CICULAR
    if(head==NULL || head->next==NULL)
    return 0;
    if(head->next==head)
