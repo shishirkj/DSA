@@ -21,6 +21,9 @@ problem link --> https://leetcode.com/problems/reverse-linked-list/description/
 */
 
 
+
+
+//WE CAN REVERSE A LINKED LIST USING STACK ALSO
 //CODE
 
 /**
