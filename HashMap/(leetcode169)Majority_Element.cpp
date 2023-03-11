@@ -22,7 +22,15 @@ problem link --> https://leetcode.com/problems/majority-element/description/
 
 */
 
+// BEST APPROACH
 
+
+BOYERS MOOORE ALGORITHM
+
+
+//ANOTHER APPROACH 
+
+SORT THE ARAY AND IF COUNT MORE THAN N/2 RETURN THE ELEMET
 
 //CODE
 
