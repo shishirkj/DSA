@@ -26,16 +26,14 @@ problem link --> https://practice.geeksforgeeks.org/problems/missing-number4257/
 //CODE
 int missingNumber(int A[], int N)
 {
-    // Your code goes here
-    vector<int>arr1;int ans=0;
-    for(int i=0;i<N;i++){
-        arr1.push_back(i+1);
-        ans = ans ^arr1[i];
-    }
-    for(int i=0;i<N-1;i++){
-        ans = ans^A[i];
-    }
-    return ans;
+    int sum=0;
+        for(int i=0;i<n-1;i++)
+        {
+            sum^=((i+1)^array[i]);
+            
+        }
+        return sum^n;
+    
 
     
     
