@@ -34,7 +34,7 @@ class Solution {
 public:
     string removeDuplicates(string s) {
 
-        stack<int>st;
+        stack<char>st;
         
         for( int i=0;i<s.length();i++)
         //step1: if stack empty push element
