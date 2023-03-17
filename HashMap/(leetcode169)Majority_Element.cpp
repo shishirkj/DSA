@@ -26,7 +26,50 @@ problem link --> https://leetcode.com/problems/majority-element/description/
 
 
 BOYERS MOOORE ALGORITHM
-
+ int majorityElement(int a[], int size)
+    {
+        
+       // Using Boyles Moore Algorithm
+       
+       //step1: Consider 1st element majority element 
+       
+       //step2: if count==0 ,that index becomes majority element
+       
+       int res = 0;int count =1;
+       for(int i=1;i<size;i++)
+       {
+           if(a[res]==a[i])
+           { 
+               count++;
+           }
+           else
+           {
+               count--;
+           }
+           
+           if(count==0)
+           {
+               res =i;
+               count=1;
+           }
+       }
+       
+       
+       //step3: take the index res and actual check it by traversing again also intialize count to zero
+       
+       count =0;
+       
+       for(int i=0;i<size;i++)
+       {
+           if(a[res] == a[i]){count++;}
+       }
+       
+       if(count<=size/2){return -1;}
+     
+       return a[res];
+       
+          
+    }
 
 //ANOTHER APPROACH 
 
