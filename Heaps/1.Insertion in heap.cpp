@@ -14,7 +14,7 @@ void insertion(int data)
 
             size = size+1;
             int index = size;
-
+             arr[index] = data;
             while(index>1)
             { 
                 parent  = index/2;
