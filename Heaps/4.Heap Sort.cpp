@@ -72,7 +72,7 @@ class Solution
     void buildHeap(int arr[], int n)  
     { 
     //build heap(rearrange array)
-    for(int i = n/2;i>=0;i--)
+    for(int i = n/2-1;i>=0;i--)
         heapify(arr,n,i);
         return;
         
