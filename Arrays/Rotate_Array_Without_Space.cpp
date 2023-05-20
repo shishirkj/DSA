@@ -25,6 +25,12 @@ class Solution{
 public:
     void leftRotate(int arr[], int n, int d) {
         // code here
+        
+               /*have d = d%n
+            and if more than one time rotated
+             then  rotate 1st time from 0 to n-k-1 and n-k to n-1 then
+              full array reverse and remember to keep k = k%n nahi to runtime error*/ 
+        reverse(arr,arr+d);
         reverse(arr,arr+d);
         reverse (arr+d,arr+n);
         reverse (arr,arr+n);
