@@ -1,0 +1,51 @@
+/*The structure of the class is
+class SortedStack{
+public:
+	stack<int> s;
+	void sort();
+};
+*/
+
+/* The below method sorts the stack s 
+you are required to complete the below method */
+
+
+void SortedInsert(stack<int>&s,int num){ 
+    
+      // Base case: stack is empty or top element is less than num
+    if (s.empty() || s.top() <=num)
+    { 
+        s.push(num);
+        return;
+    }
+    
+    // Recursive call: pop the top element and recursively call SortedInsert
+    // with the same stack and num
+    int n = s.top();
+    s.pop();
+    SortedInsert(s, num);
+    
+    // Push the popped element back onto the stack
+    s.push(n);
+    
+    
+    
+}
+
+void SortedStack :: sort()
+{
+   //base case
+   if(s.empty()){return ;}
+   
+   
+   int num = s.top();
+   
+   s.pop();
+   
+    // Recursive call: sort the rest of the stack
+   sort();
+   
+    // Insert the popped element in the sorted stack using SortedInsert
+   SortedInsert(s,num);
+   
+}
